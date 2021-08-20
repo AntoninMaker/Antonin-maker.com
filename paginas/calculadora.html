@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="../css/calculadora.css">
+  <meta name="theme-color" content="#b60606" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+   
+    </head>
+<body>
+  
+  <div class="sidebar">
+    <div class="logo-details">
+      <i class='bx bxl-c-plus-plus icon'></i>
+        <div class="logo_name">Antonin'Maker</div>
+        <i class='bx bx-menu' id="btn" ></i>
+    </div>
+    <ul class="nav-list">
+      
+      <li>
+        <a href="../index.html">
+          <i class='bx bx-home'></i>
+          <span class="links_name">Home</span>
+        </a>
+         <span class="tooltip">Home</span>
+      </li>
+      <li>
+       <a href="calculadora.html">
+         <i class='bx bx-sync' ></i>
+         <span class="links_name">Recarregar</span>
+       </a>
+       <span class="tooltip">Recarregar</span>
+     </li>
+      <li>
+       <a href="agradecimentos.html">
+         <i class='bx bx-bolt-circle' ></i>
+         <span class="links_name">Agradecimentos</span>
+       </a>
+       <span class="tooltip">Agradecimentos</span>
+     </li>
+     <li>
+        <a href="lampada.html">
+          <i class='bx bx-mobile'></i>
+          <span class="links_name">Lâmpada</span>
+        </a>
+         <span class="tooltip">Lâmpada</span>
+      </li>
+       <li>
+        <a href="lampadapc.html">
+          <i class='bx bx-mouse-alt'></i>
+          <span class="links_name">Lâmpada(PC)</span>
+        </a>
+         <span class="tooltip">Lâmpada(PC)</span>
+      </li>
+        <li>
+        <a href="https://api.whatsapp.com/send?phone=552298470588&text=OPA%20MN%20EAI%20TUDO%20BEM%3FVIM%20PELO%20SITE%20DO%20ANTONIN'MAKER%20SLV%20AI">
+          <i class='bx bx-phone'></i>
+          <span class="links_name">WhatsApp</span>
+        </a>
+         <span class="tooltip">WhatsApp</span>
+      </li>
+
+     </li>
+    </ul>
+  </div>
+  
+  
+  
+    <div class="fundo">
+        
+       
+
+        <div class="calculadora">
+            <h1>Calculadora</h1>
+            <p id="resultado"></p>
+            <table>
+                <tr>
+                    <td><button class="botao" onclick="clean()">C</button></td>
+                    <td><button class="botao" onclick="back()"><<</button></td>
+                    <td><button class="botao" onclick="insert('/')">÷</button></td>
+                    <td><button class="botao" onclick="insert('*')">X</button></td>
+                </tr>
+                <tr>
+                    <td><button class="botao" onclick="insert('7')">7</button></td>
+                    <td><button class="botao" onclick="insert('8')">8</button></td>
+                    <td><button class="botao" onclick="insert('9')">9</button></td>
+                    <td><button class="botao" onclick="insert('-')">-</button></td>
+                </tr>
+                <tr>
+                    <td><button class="botao" onclick="insert('4')">4</button></td>
+                    <td><button class="botao" onclick="insert('5')">5</button></td>
+                    <td><button class="botao" onclick="insert('6')">6</button></td>
+                    <td><button class="botao" onclick="insert('+')">+</button></td>
+                </tr>
+                <tr>
+                    <td><button class="botao" onclick="insert('1')">1</button></td>
+                    <td><button class="botao" onclick="insert('2')">2</button></td>
+                    <td><button class="botao" onclick="insert('3')">3</button></td>
+                    <td rowspan="2"><button class="botao" style="height: 106px;" onclick="calcular()">=</button></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button class="botao" style="width: 106px;" onclick="insert('0')">0</button></td>
+                    <td><button class="botao" onclick="insert('.')">.</button></td>
+                </tr>
+            </table>
+            
+        </div>
+    </div>
+    <script src="../scripts/calculadora.js"></script>
+</body>
+</html>
